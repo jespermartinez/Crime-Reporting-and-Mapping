@@ -135,7 +135,7 @@ var baseurl = '';
 			
 			<div class="login-bottom-links">
 				
-				<a href="extra-forgot-password.html" class="link">Forgot your password?</a>
+<!-- 				<a href="extra-forgot-password.html" class="link">Forgot your password?</a> -->
 				
 				<br />
 				
