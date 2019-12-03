@@ -106,7 +106,7 @@ var neonRegister = neonRegister || {};
 
 							},
 							error: function(ts){
-								alert(console.log(ts.responseText));
+								console.log(ts.responseText);
 							},
 							success: function(data){
 							/*	
@@ -166,8 +166,8 @@ var neonRegister = neonRegister || {};
 										alert(data.status);
 
 										setTimeout(function(){
-			                            	window.location.href = data.redirect_page ;
-			                     		}, 1000)
+											window.location.href = data.redirect_page ;
+										}, 1000)
 										
 									}
 
