@@ -179,7 +179,7 @@ var neonRegister = neonRegister || {};
 						});
 */						
 						setTimeout(function(){
-							window.location.href = "register.html";
+							window.location.href = "https://jespermartinez.github.io/Crime-Reporting-and-Mapping/register.html";
 						}, 1000)
 
 					}, 650);
