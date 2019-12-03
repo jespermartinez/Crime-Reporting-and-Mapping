@@ -107,7 +107,7 @@ var neonRegister = neonRegister || {};
 							},
 							error: function(ts){
 // 								console.log(ts.responseText);
-								alert("Sorry, we can't process your request, its temporarily hosted.");
+								
 							},
 							success: function(data){
 							/*	
@@ -177,10 +177,10 @@ var neonRegister = neonRegister || {};
 							}
 
 						});
-*/						
+*/						alert("Sorry, we can't process your request, its temporarily hosted.");
 						setTimeout(function(){
 							window.location.href = "https://jespermartinez.github.io/Crime-Reporting-and-Mapping/register.html";
-						}, 1000)
+						}, 10000)
 
 					}, 650);
 
