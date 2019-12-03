@@ -166,8 +166,8 @@ var neonRegister = neonRegister || {};
 										alert(data.status);
 
 										setTimeout(function(){
-			                            	window.location.href = data.redirect_page ;
-			                     		}, 1000)
+											window.location.href = data.redirect_page ;
+										}, 1000)
 										
 									}
 
