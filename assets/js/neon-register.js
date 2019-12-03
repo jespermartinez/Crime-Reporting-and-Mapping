@@ -143,7 +143,7 @@ var neonRegister = neonRegister || {};
 									});
 									
 								}, 1000);
-				
+							//	
 			
 
 								setTimeout(function(){
@@ -321,6 +321,6 @@ var neonRegister = neonRegister || {};
 })(jQuery, window);
 
 
-function baseUrlAction(){
-     return location.protocol + "//" + location.host + "/mobile_crime_reporting_and_mapping_system/ADMIN/inc/ajax/ajax_controller.php";
- }
+// function baseUrlAction(){
+//      return location.protocol + "//" + location.host + "/mobile_crime_reporting_and_mapping_system/ADMIN/inc/ajax/ajax_controller.php";
+//  }
