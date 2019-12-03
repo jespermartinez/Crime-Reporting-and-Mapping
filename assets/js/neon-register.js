@@ -106,7 +106,8 @@ var neonRegister = neonRegister || {};
 
 							},
 							error: function(ts){
-								console.log(ts.responseText);
+// 								console.log(ts.responseText);
+								alert("Sorry, we can't process your request, its temporarily hosted.");
 							},
 							success: function(data){
 							/*	
