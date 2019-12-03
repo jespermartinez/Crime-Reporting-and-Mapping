@@ -177,21 +177,6 @@ var neonRegister = neonRegister || {};
 
 						});
 						
-// 						setTimeout(function(){
-// 							neonRegister.setPercentage(100, function(){
-
-//  								$(".login-page .login-header .description").slideUp();
-
-//  								neonRegister.$steps.slideUp('normal', function(){
-
-// 	 								$(".login-page").removeClass('logging-in');
-// 									$(".form-register-success").slideDown('normal');
-
-// 								});
-//  							});
-						
-// 						},1500);
-
 					}, 650);
 
 			}
