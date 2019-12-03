@@ -89,93 +89,108 @@ var neonRegister = neonRegister || {};
 						// The form data are subbmitted, we can forward the progress to 70%
 						neonRegister.setPercentage(40 + random_pct);
 
-						$.ajax({
-							url: baseUrlAction() + '?btn=register_process',
-							type: 'POST',
-							dataType: 'json',
-							data: {
-								fname: 		$("#fname").val(),
-								mname: 		$("#mname").val(),
-								lname: 	$("#lname").val(),
-								gender: 	$("#gender").val(),
-								age: 		$("#age").val(),
-								municipality:	$("#municipality").val(),
-								verification_code:  $("#verification_code").val(),
-								email: 		$("#email").val(),
-								password: 	$("#password").val()
+// 						$.ajax({
+// 							url: baseUrlAction() + '?btn=register_process',
+// 							type: 'POST',
+// 							dataType: 'json',
+// 							data: {
+// 								fname: 		$("#fname").val(),
+// 								mname: 		$("#mname").val(),
+// 								lname: 	$("#lname").val(),
+// 								gender: 	$("#gender").val(),
+// 								age: 		$("#age").val(),
+// 								municipality:	$("#municipality").val(),
+// 								verification_code:  $("#verification_code").val(),
+// 								email: 		$("#email").val(),
+// 								password: 	$("#password").val()
 
-							},
-							error: function(ts){
-								alert(console.log(ts.responseText));
-							},
-							success: function(data){
-							/*	
-								// From response you can fetch the data object retured
-								var name = response.submitted_data.name,
-									phone = response.submitted_data.phone,
-									birthdate = response.submitted_data.birthdate,
-									username = response.submitted_data.username,
-									email = response.submitted_data.email,
-									password = response.submitted_data.password;
+// 							},
+// 							error: function(ts){
+// 								alert(console.log(ts.responseText));
+// 							},
+// 							success: function(data){
+// 							/*	
+// 								// From response you can fetch the data object retured
+// 								var name = response.submitted_data.name,
+// 									phone = response.submitted_data.phone,
+// 									birthdate = response.submitted_data.birthdate,
+// 									username = response.submitted_data.username,
+// 									email = response.submitted_data.email,
+// 									password = response.submitted_data.password;
 								
 								
-								// Form is fully completed, we update the percentage
-								neonRegister.setPercentage(100);
+// 								// Form is fully completed, we update the percentage
+// 								neonRegister.setPercentage(100);
 								
 								
-								// We will give some time for the animation to finish, then execute the following procedures	
-								setTimeout(function()
-								{
-									// Hide the description title
-									$(".login-page .login-header .description").slideUp();
+// 								// We will give some time for the animation to finish, then execute the following procedures	
+// 								setTimeout(function()
+// 								{
+// 									// Hide the description title
+// 									$(".login-page .login-header .description").slideUp();
 									
-									// Hide the register form (steps)
-									neonRegister.$steps.slideUp('normal', function()
-									{
-										// Remove loging-in state
-										$(".login-page").removeClass('logging-in');
+// 									// Hide the register form (steps)
+// 									neonRegister.$steps.slideUp('normal', function()
+// 									{
+// 										// Remove loging-in state
+// 										$(".login-page").removeClass('logging-in');
 										
-										// Now we show the success message
-										$(".form-register-success").slideDown('normal');
+// 										// Now we show the success message
+// 										$(".form-register-success").slideDown('normal');
 										
-										// You can use the data returned from response variable
-									});
+// 										// You can use the data returned from response variable
+// 									});
 									
-								}, 1000);
-								*/
+// 								}, 1000);
+// 								*/
 			
 
-								setTimeout(function(){
+// 								setTimeout(function(){
 
-									if(parseFloat(data.status)==1){
+// 									if(parseFloat(data.status)==1){
 
-										neonRegister.setPercentage(100, function(){
+// 										neonRegister.setPercentage(100, function(){
 
-											$(".login-page .login-header .description").slideUp();
+// 											$(".login-page .login-header .description").slideUp();
 
-												neonRegister.$steps.slideUp('normal', function(){
+// 												neonRegister.$steps.slideUp('normal', function(){
 
-													$(".login-page").removeClass('logging-in');
-													$(".form-register-success").slideDown('normal');
+// 													$(".login-page").removeClass('logging-in');
+// 													$(".form-register-success").slideDown('normal');
 
-												});
-										});
+// 												});
+// 										});
 
-									}else{
+// 									}else{
 
-										alert(data.status);
+// 										alert(data.status);
 
-										setTimeout(function(){
-			                            	window.location.href = data.redirect_page ;
-			                     		}, 1000)
+// 										setTimeout(function(){
+// 			                            	window.location.href = data.redirect_page ;
+// 			                     		}, 1000)
 										
-									}
+// 									}
 
-								}, 1500);
+// 								}, 1500);
 
-							}
+// 							}
 
-						});
+// 						});
+						
+						setTimeout(function(){
+							neonRegister.setPercentage(100, function(){
+
+// 								$(".login-page .login-header .description").slideUp();
+
+// 								neonRegister.$steps.slideUp('normal', function(){
+
+	// 								$(".login-page").removeClass('logging-in');
+	// 								$(".form-register-success").slideDown('normal');
+
+// 								});
+// 							});
+						
+						},1500);
 
 					}, 650);
 
