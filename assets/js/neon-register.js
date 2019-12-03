@@ -88,7 +88,7 @@ var neonRegister = neonRegister || {};
 					
 						// The form data are subbmitted, we can forward the progress to 70%
 						neonRegister.setPercentage(40 + random_pct);
-
+/*
 						$.ajax({
 							url: baseUrlAction() + '?btn=register_process',
 							type: 'POST',
@@ -143,7 +143,7 @@ var neonRegister = neonRegister || {};
 									});
 									
 								}, 1000);
-								*/
+				
 			
 
 								setTimeout(function(){
@@ -177,6 +177,10 @@ var neonRegister = neonRegister || {};
 							}
 
 						});
+*/						
+						setTimeout(function(){
+							window.location.href = "register.html";
+						}, 1000)
 
 					}, 650);
 
